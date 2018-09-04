@@ -1,0 +1,16 @@
+export const SET_USER = 'SET_USER';
+export const ERRORS = 'ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const GET_PROFILE = 'GET_PROFILE';
+export const GET_PROFILES = 'GET_PROFILES';
+export const PROFILE_LOADING = 'PROFILE_LOADING';
+export const PROFILE_NOT_FOUND = 'PROFILE_NOT_FOUND';
+export const SET_PROFILE = 'SET_PROFILE';
+export const UPDATE_USER = 'UPDATE_USER';
+export const PROFILES_LOADING = 'PROFILES_LOADING';
+export const GET_POSTS = 'GET_POSTS';
+export const POSTS_LOADING = 'POSTS_LOADING';
+export const GET_MY_POSTS = 'GET_MY_POSTS';
+export const MY_POSTS_LOADING = 'MY_POSTS_LOADING';
+export const SINGLE_POST_LOADING = 'SINGLE_POST_LOADING';
+export const GET_SINGLE_POST = 'GET_SINGLE_POST';

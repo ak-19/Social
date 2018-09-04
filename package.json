@@ -1,0 +1,31 @@
+{
+  "name": "social",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "client": "npm start --prefix client",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "server-debug": "node $NODE_DEBUG_OPTION server/server.js",
+    "server-debug-web": "node --inspect-brk server/server.js",
+    "dev-full": "concurrently \"npm run client\" \"npm run server\"",
+    "dev-full-debug": "concurrently \"npm run client\" \"npm run server-debug\""
+  },
+  "author": "ante",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.4.0"
+  }
+}

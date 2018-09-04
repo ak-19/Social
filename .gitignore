@@ -1,0 +1,10 @@
+/node_modules
+/client/node_modules
+package-lock.json
+misc.xml
+modules.xml
+Social.iml
+vcs.xml
+.idea/
+build/
+public/
