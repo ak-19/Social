@@ -2,7 +2,7 @@
   "name": "social",
   "version": "0.0.1",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "test",
     "client": "npm start --prefix client",
