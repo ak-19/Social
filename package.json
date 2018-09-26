@@ -7,6 +7,7 @@
     "test": "test",
     "client": "npm start --prefix client",
     "start": "node server/server.js",
+    "heroku-prebuild": "npm run build --prefix client",
     "server": "nodemon server/server.js",
     "server-debug": "node $NODE_DEBUG_OPTION server/server.js",
     "server-debug-web": "node --inspect-brk server/server.js",
