@@ -7,7 +7,7 @@
     "test": "test",
     "client": "npm start --prefix client",
     "start": "node server/server.js",
-    "heroku-prebuild": "npm run build --prefix client",
+    "client-to-production": "npm run build --prefix client",
     "server": "nodemon server/server.js",
     "server-debug": "node $NODE_DEBUG_OPTION server/server.js",
     "server-debug-web": "node --inspect-brk server/server.js",
@@ -28,17 +28,5 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.4.0"
-  },
-  "devDependencies": {
-    "axios": "^0.18.0",
-    "jwt-decode": "^2.2.0",
-    "moment": "^2.22.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
   }
 }
