@@ -71,10 +71,7 @@ profileRouter.get('/all', passport.authenticate('jwt', {session: false}), (req, 
     Profile.find()
         .populate('user', ['username', 'avatar'])
         .then(profiles => {
-            if (!profiles || profiles.length < 1) {
-                return res.status(404).json({msg: 'No profiles found'});
-            }
-            res.json(profiles);
+           res.json(profiles);
         })
         .catch(err => res.status(400).json(err));
 });

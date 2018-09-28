@@ -33,7 +33,7 @@ class Profiles extends Component {
     render() {
         const {loading, profiles} = this.props.componentState;
         const {error} = this.props.errorProvider;
-
+        
         if (loading) {
             return <Spinner/>;
         }
