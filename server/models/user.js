@@ -30,14 +30,13 @@ UserSchema.statics.encryptPassword = function (password) {
     return bcrypt.hashSync(password);
 };
 
-const User = mongoose.model('User', UserSchema);
-
 UserSchema.pre('save', function (next) {
-    console.log('Saving.....');
-    this.password = bcrypt.hashSync(this.password, 10);
-    this.avatar = avatar.url(this.email, {s: '200', r: 'g', d: 'mm'});
-    next();
+  console.log('Saving.....');
+  this.password = bcrypt.hashSync(this.password, 10);
+  this.avatar = avatar.url(this.email, {s: '200', r: 'g', d: 'mm'});
+  next();
 });
 
+const User = mongoose.model('User', UserSchema);
 
 module.exports = User;
